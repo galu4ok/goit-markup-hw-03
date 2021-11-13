@@ -8,7 +8,33 @@
   --footer-bg-color: #2f303a;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --selection-color-hero-btn: #188ce8;
+  --border-header-line: #ececec;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
@@ -18,6 +44,7 @@ body {
 }
 .link {
   text-decoration: none;
+  display: block;
 }
 .list {
   list-style: none;
@@ -40,10 +67,53 @@ body {
   line-height: 1.17;
   text-align: center;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+/* -------------------Header-------------- */
+.header {
+  border-bottom: 1px solid var(--border-header-line);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+/* .nav-item {
+  margin-right: 50px;
+} */
+.nav-item:not(:last-child),
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
 /* ------------------Logo----------------- */
 
 .logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -67,6 +137,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-link {
   color: var(--main-text-color);
@@ -111,7 +184,7 @@ body {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  cursor: pointer;
+  /* cursor: pointer; */
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -178,7 +251,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
-  cursor: pointer;
+  /* cursor: pointer; */
 
   background-color: var(--team-bg-color);
 
