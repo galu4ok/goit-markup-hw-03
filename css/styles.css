@@ -66,16 +66,16 @@ body {
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 /* -------------------Header-------------- */
@@ -107,8 +107,7 @@ body {
 /* ------------------Logo----------------- */
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
   margin-right: 93px;
 
   font-family: 'Raleway', sans-serif;
@@ -135,8 +134,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 .nav-link {
   color: var(--main-text-color);
@@ -165,8 +163,7 @@ body {
 .hero {
   text-align: center;
   background-color: var(--footer-bg-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
 }
 .hero-title {
   font-size: 44px;
@@ -227,12 +224,18 @@ body {
 }
 .features-list {
   display: flex;
-  align-items: center;
 }
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
-/* ------------------Team----------------- */
+/* ----------------Duties---------------*/
+/* .duties-list {
+  display: flex;
+}
+.duties-item:not(:last-child) {
+  margin-right: 30px;
+} */
+/* ------------------Duties&Team----------------- */
 
 .team {
   background-color: var(--team-bg-color);
@@ -242,6 +245,8 @@ body {
   font-weight: 500;
   line-height: 1.19;
   text-align: center;
+
+  margin-bottom: 10px;
 }
 .team-position {
   font-size: 16px;
@@ -250,11 +255,29 @@ body {
 
   color: var(--secondary-text-color);
 }
-
+.duties-list,
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child),
+.duties-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item {
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 368px;
+}
+.team-description {
+  padding: 30px 0;
+}
 /* -----------------Footer---------------- */
 
 .footer {
   background-color: var(--footer-bg-color);
+  padding: 60px 0;
 }
 .address-item {
   font-style: normal;
@@ -262,6 +285,13 @@ body {
   line-height: 1.71;
 
   color: var(--primary-white-color);
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.container .logo.link {
+  margin-bottom: 20px;
+  padding: 0;
 }
 /* ----------Portfolio filter buttons----- */
 
