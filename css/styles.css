@@ -284,10 +284,11 @@ body {
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.logofooter {
+.container .logofooter {
   margin-bottom: 20px;
   padding: 0;
 }
+
 /* ----------Portfolio filter buttons----- */
 .filter-list {
   display: flex;
