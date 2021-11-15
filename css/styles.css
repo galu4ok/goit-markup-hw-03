@@ -78,7 +78,6 @@ body {
 .section {
   padding: 94px 0;
 }
-
 /* -------------------Header-------------- */
 .header {
   border-bottom: 1px solid var(--border-header-line);
@@ -124,7 +123,10 @@ body {
 .logo-footer {
   color: var(--primary-white-color);
 }
-
+.logofooter {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
 /* ------------------Links---------------- */
 
 .nav-link,
@@ -230,8 +232,10 @@ body {
   margin-right: 30px;
 }
 
-/* ------------------Duties&Team----------------- */
-
+/* ------------------Duties & Team----------------- */
+.duties {
+  padding: 0 0 94px 0;
+}
 .team {
   background-color: var(--team-bg-color);
 }
@@ -284,12 +288,9 @@ body {
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.container .logofooter {
-  margin: 0 0 20px 0;
-  padding: 0;
-}
 
 /* ----------Portfolio filter buttons----- */
+
 .filter-list {
   display: flex;
   justify-content: center;
